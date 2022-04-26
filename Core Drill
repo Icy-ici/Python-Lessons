@@ -1,0 +1,4 @@
+radius = int(input())
+height = int(input())
+pi = 3.14
+print(pi*radius*radius*height/3)
