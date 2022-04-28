@@ -1,0 +1,12 @@
+megabytes = int(input())
+months = int(input())
+used = []
+
+for i in range(months):
+    monthUsed = int(input())
+    used.append(monthUsed)
+
+for i in range(len(used)):
+    used[i] = megabytes - used[i]
+
+print(sum(used) + megabytes)
