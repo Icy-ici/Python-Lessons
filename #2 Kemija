@@ -1,0 +1,10 @@
+sentence = input()
+decoded = sentence
+
+decoded = decoded.replace("apa", "a")
+decoded = decoded.replace("epe", "e")
+decoded = decoded.replace("ipi", "i")
+decoded = decoded.replace("opo", "o")
+decoded = decoded.replace("upu", "u")
+
+print(decoded)
