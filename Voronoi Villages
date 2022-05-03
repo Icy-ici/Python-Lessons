@@ -1,0 +1,24 @@
+min = 20000000000
+sizel = 0
+sizer = 0
+sizet = 0
+
+points = []
+villagenum = int(input())
+for i in range(villagenum):
+    points.append(int(input()))
+
+points.sort()
+
+for i in range(1, villagenum - 1):
+    diffl = points[i] - points[i - 1]
+    diffr = points[i + 1] - points[i]
+    sizel = diffl / 2
+    sizer = diffr / 2
+
+    sizet = sizel + sizer
+
+    if sizet < min:
+        min = sizet
+
+print("{:.1f}".format(min))
